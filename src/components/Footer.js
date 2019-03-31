@@ -1,6 +1,10 @@
 import React from 'react'
-import { createPortal } from 'react-dom'
+import Portal from './Portal'
 
 export default function Footer() {
-  return createPortal(<p>Footer</p>, document.querySelector('body > footer'))
+  return (
+    <Portal selector="body > footer">
+      <p>Footer</p>
+    </Portal>
+  )
 }
