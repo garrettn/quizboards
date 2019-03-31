@@ -3,8 +3,8 @@ import Portal from './Portal'
 
 export default function Header() {
   return (
-    <Portal selector="body > header">
-      <h1>Header</h1>
+    <Portal selector="body > header" className="bg-black text-white">
+      <h1>Quizboards!</h1>
     </Portal>
   )
 }
